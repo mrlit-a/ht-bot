@@ -9,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Beltahmd/beltah-md /root/beltah
-WORKDIR /root/beltah/
+RUN git clone https://github.com/mrlit-a/ht-bot /root/ht-bot
+WORKDIR /root/ht-bot/
 
 
 COPY package.json .
