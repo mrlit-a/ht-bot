@@ -71,14 +71,14 @@ else {
 }
 
     } else {
-        if(!superUser) { repondre("there is no alive for this bot") ; return};
+        if(!superUser) { repondre("bro ou pa konfigire mesaj alive la") ; return};
 
-      await   repondre("You have not yet saved your alive, to do this;  enter after alive your message and your image or video link in this context: .alive message;lien");
+      await   repondre("ou pat save msj alive, pouw fe sa;  antre mesaj aliv ou a ak imaj ou oswa lyen videyo ou nan kontèks sa a: .alive message;lien");
          repondre("don't do fake thinks :)")
      }
  } else {
 
-    if(!superUser) { repondre ("Only the owner can  modify the alive") ; return};
+    if(!superUser) { repondre ("Yoo chen sof propriyetè a ki ka mofifye l") ; return};
 
   
     const texte = arg.join(' ').split(';')[0];
@@ -88,7 +88,7 @@ else {
     
 await addOrUpdateDataInAlive(texte , tlien)
 
-repondre(' Holla🥴, *HAITIEN-MD BOT* is alive just like you gee. ')
+repondre(' Yoo suo🥴, *HAITIEN-MD BOT* is alive just like you gee. ')
 
 }
     });
